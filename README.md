@@ -112,7 +112,10 @@ A really helpful resource for doing this project and creating smooth trajectorie
   * In main.cpp line 112, the sensor fusion information is pushed into the Vehicle object to serve the prediction function:
     * In vehicle.cpp line 42, the 'choose_next_state()' function is called to generate potential states can select the optimazed solution:
       * Line 43, function 'successor_states()' will lay out he possible states based on the FSM showing below:
-        ![image01][https://github.com/tommy1900/CarND-Path-Planning-Project-FSM-CostFunction/blob/master/FSM.PNG?raw=true]
+        <p align="center">
+             <img src="./FSM.PNG" alt="FSM" width="50%" height="50%">
+             <br>FSM.PNG
+        </p>
       * Line 44, function 'check_collision_targets()' is used to predict the possible motions of surrunding objects:
         * Line (119 - 188) will update the struct 'collider' 's distance and speed (where collider is a list of nearby objects).
       * Line 56, function 'find_best_state()' will utilize the sensor data and potential list of states to judge for the best solution:
@@ -136,4 +139,7 @@ A really helpful resource for doing this project and creating smooth trajectorie
         * The JMT algorithm involves a 3rd order derivative (acceleration) for the quintic polynomial IN S COORDINATE, which will create much higher uncertainty since the map given has a 30 meter resolution in XY coordinate, and its even worse if covert into s coordinate.  
 
   A proof of criteria satisfication is showing below:
-  ![image02][https://github.com/tommy1900/CarND-Path-Planning-Project-FSM-CostFunction/blob/master/proofofsuc.PNG?raw=true]
+          <p align="center">
+             <img src="./proofofsuc.PNG" alt="DEMO" width="50%" height="50%">
+             <br>proofofsuc.PNG
+        </p>
