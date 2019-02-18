@@ -136,4 +136,4 @@ A really helpful resource for doing this project and creating smooth trajectorie
         * The JMT algorithm involves a 3rd order derivative (acceleration) for the quintic polynomial IN S COORDINATE, which will create much higher uncertainty since the map given has a 30 meter resolution in XY coordinate, and its even worse if covert into s coordinate.  
 
   A proof of criteria satisfication is showing below:
-  ![image02][https://user-images.githubusercontent.com/37120615/52980153-a6999880-338d-11e9-8837-b3789698168c.PNG]
+  ![image02][https://github.com/tommy1900/CarND-Path-Planning-Project-FSM-CostFunction/blob/master/proofofsuc.PNG?raw=true]
